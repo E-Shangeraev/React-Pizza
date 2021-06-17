@@ -1,6 +1,6 @@
-import React from 'react';
-import uuid from 'react-uuid';
-import PropTypes from 'prop-types';
+import React from 'react'
+import uuid from 'react-uuid'
+import PropTypes from 'prop-types'
 
 const Categories = React.memo(function Categories({
   activeCategory,
@@ -26,21 +26,21 @@ const Categories = React.memo(function Categories({
           ))}
       </ul>
     </div>
-  );
-});
+  )
+})
 
 Categories.propTypes = {
   activeCategory: PropTypes.number,
   items: PropTypes.arrayOf(PropTypes.string.isRequired),
   onClickCategory: PropTypes.func.isRequired,
-};
+}
 
 Categories.defaultProps = {
   activeCategory: null,
   items: [],
-};
+}
 
-export default Categories;
+export default Categories
 
 // class Categories extends React.Component {
 //   state = {
